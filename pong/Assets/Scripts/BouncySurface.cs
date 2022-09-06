@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BouncySurface : MonoBehaviour
 {
-
     public float bounceStrength;
 
     private void OnCollisionEnter2D(Collision2D collision)
