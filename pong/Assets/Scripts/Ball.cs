@@ -4,18 +4,15 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    // Start is called before the first frame update
 
     public float speed = 200.0f;
 
     private Rigidbody2D _rigidbody;
 
-
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody2D>();        
     }
-
 
     private void Start()
     {
@@ -27,7 +24,6 @@ public class Ball : MonoBehaviour
     {
         _rigidbody.position = Vector3.zero;
         _rigidbody.velocity = Vector3.zero;
-
     }
 
     public void AddStartingForce()
@@ -44,6 +40,4 @@ public class Ball : MonoBehaviour
     {
         _rigidbody.AddForce(force);
     }
-
-
 }
